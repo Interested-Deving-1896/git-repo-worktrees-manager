@@ -1,62 +1,75 @@
-# GRM — Git Repository Manager ![Nix Flake Check](https://github.com/hakoerber/git-repo-manager/workflows/Nix%20Flake%20Check/badge.svg)
+[update-readmes]   Mode: rewrite — migrating to template structure...
+# git-repo-worktrees-manager
 
-GRM helps you manage git repositories in a declarative way. Configure your
-repositories in a [TOML](https://toml.io/) or YAML file, GRM does the rest.
+[![Built with Ona](https://ona.com/build-with-ona.svg)](https://app.ona.com/#https://github.com/Interested-Deving-1896/git-repo-worktrees-manager)
 
-Also, GRM can be used to work with git worktrees in an opinionated,
-straightforward fashion.
+<!-- AI:start:what-it-does -->
+_Description pending._
+<!-- AI:end:what-it-does -->
 
-**Take a look at the [official documentation](https://hakoerber.github.io/git-repo-manager/)
-for installation & quickstart.**
+## Architecture
 
-# Why?
+<!-- AI:start:architecture -->
+_Architecture documentation pending._
+<!-- AI:end:architecture -->
 
-I have a **lot** of repositories on my machines. My own stuff, forks, quick
-clones of other's repositories, projects that never went anywhere ... In short,
-I lost overview.
+## Install
 
-To sync these repositories between machines, I've been using Nextcloud. The thing
-is, Nextcloud is not too happy about too many small files that change all the time,
-like the files inside `.git`. Git also assumes that those files are updated as
-atomically as possible. Nextcloud cannot guarantee that, so when I do a `git status`
-during a sync, something blows up. And resolving these conflicts is just no fun ...
+<!-- Add installation instructions here. This section is yours — the AI will not modify it. -->
 
-In the end, I think that git repos just don't belong into something like Nextcloud.
-Git is already managing the content & versions, so there is no point in having
-another tool do the same. But of course, setting up all those repositories from
-scratch on a new machine is too much hassle. What if there was a way to clone all
-those repos in a single command?
+```bash
+git clone https://github.com/Interested-Deving-1896/git-repo-worktrees-manager.git
+cd git-repo-worktrees-manager
+```
 
-Also, I once transferred the domain of my personal git server. I updated a few
-remotes manually, but I still stumble upon old, stale remotes in projects that
-I haven't touched in a while. What if there was a way to update all those remotes
-in once place?
+## Usage
 
-This is how GRM came to be. I'm a fan of infrastructure-as-code, and GRM is a bit
-like Terraform for your local git repositories. Write a config, run the tool, and
-your repos are ready. The only thing that is tracked by git is the list of
-repositories itself.
+<!-- Add usage examples here. This section is yours — the AI will not modify it. -->
 
-# Crates
+## Configuration
 
-* [`toml`](https://docs.rs/toml/) for the configuration file.
-* [`serde`](https://docs.rs/serde/), together with
-  [`serde_yaml`](https://docs.rs/serde_yaml/) and
-  [`serde_json`](https://docs.rs/serde_json/). Because we're using Rust, after
-  all.
-* [`git2`](https://docs.rs/git2/), a safe wrapper around `libgit2`, for all git operations.
-* [`clap`](https://docs.rs/clap/), [`console`](https://docs.rs/console/), [`comfy_table`](https://docs.rs/comfy-table/) and [`shellexpand`](https://docs.rs/shellexpand) for good UX.
-* [`isahc`](https://docs.rs/isahc/) as the HTTP client for forge integrations.
+<!-- Document configuration options here. This section is yours — the AI will not modify it. -->
 
-# Links
+## CI
 
-* [crates.io](https://crates.io/crates/git-repo-manager)
+<!-- AI:start:ci -->
+_CI documentation pending._
+<!-- AI:end:ci -->
 
-# Mirrors
+## Mirror chain
 
-This repository can be found on multiple forges:
+<!-- AI:start:mirror-chain -->
+This repo is maintained in [`Interested-Deving-1896/git-repo-worktrees-manager`](https://github.com/Interested-Deving-1896/git-repo-worktrees-manager) and mirrored through:
 
-* https://github.com/hakoerber/git-repo-manager
-* https://code.hkoerber.de/hannes/git-repo-manager/
-* https://codeberg.org/hakoerber/git-repo-manager
-* https://git.sr.ht/~hkoerber/git-repo-manager
+```
+Interested-Deving-1896/git-repo-worktrees-manager  ──►  OpenOS-Project-OSP/git-repo-worktrees-manager  ──►  OpenOS-Project-Ecosystem-OOC/git-repo-worktrees-manager
+```
+
+Changes flow downstream automatically via the hourly mirror chain in
+[`fork-sync-all`](https://github.com/Interested-Deving-1896/fork-sync-all).
+Direct commits to OSP or OOC are detected and opened as PRs back to `Interested-Deving-1896`.
+<!-- AI:end:mirror-chain -->
+
+## Contributors
+
+<!-- AI:start:contributors -->
+_Contributors pending._
+<!-- AI:end:contributors -->
+
+## Origins
+
+<!-- AI:start:origins -->
+_Original project — no upstream fork._
+<!-- AI:end:origins -->
+
+## Resources
+
+<!-- AI:start:resources -->
+_No additional resource files found._
+<!-- AI:end:resources -->
+
+## License
+
+<!-- AI:start:license -->
+[GPL-3.0](https://github.com/Interested-Deving-1896/git-repo-worktrees-manager/blob/develop/LICENSE) © 2026 [Interested-Deving-1896](https://github.com/Interested-Deving-1896)
+<!-- AI:end:license -->
